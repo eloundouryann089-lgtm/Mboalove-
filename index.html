@@ -1,311 +1,44 @@
 <!DOCTYPE html>
-<hmtl lang="fr">
-  <head>
+<html lang="fr">
+<head>
     <meta charset="UTF-8">
-      <meta name="viewport"content="width=device-width,
-    initial-scale=1.0">
-    <title>MboaLove&heart;</title>
-    <style>
-      *{
-        box-sizing:border-box;
-        margin:0;
-        padding:0;
-        font-family:Arial,sans-serif;
-      }
-      body{
-        background:#fff5f7;
-        color:#333;
-      }
-      header{
-        background:linear-gardient(135deg,#e91e63,#ff5C8a);
-        color:white;
-padding:18px 20px;
-  display:flex;
-        justify-content:space-between;
-        align-items:center;
-       position:sticky;
-        top:0;
-        z-index:10;
-      }
-      .logo{
-        font-size:24px;
-        font-weight:bold;
-      }
-      nav a {
-        color:white;
-        text-decoration:none;
-        margin-left:12px;
-        font-size:14px;
-      }
-      .hero{
-        min-height:500px;
-        padding:70px 20px;
-        text-align:center;
-        display:flex;
-        flex-direction:colum;
-        justify-content:center;
-        align-items:center;
-        background:
-          linear-gardient(rgba(0,0,0,35),rgba(0,0,0,35)),
-          url("https://image.unsplash.com/photo-1516589178581-6cd7833ae3b
-          2?auto=format&fit=crop&w=1200&q=80")
-        center/cover;
-        color:white;
-      }
-      .hero h1 {
-        font-size:42PX;
-        margin-botton:15PX;
-      }
-      .btn{
-        border:none;
-        background:#e91e63;
-        color:white;
-        padding:15px 28px;
-        border-radius:30PX;
-        font-size:17px;
-        cursor:pointer;
-        font-weight:bold;
-      }
-      .btn:hover{
-        background:#c2185b;
-      }
-      section{
-        padding:50px 20px;
-        max-width:1000px
-        margin:auto;
-      }
-      .title{
-        text-align:center;
-        margin-bottom:30px;
-        color:#e91e63;
-        font-size:30px;
-      }
-      .features{
-        display:grid;
-        grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-        gap:20px;
-      }
-      .cad{
-        background:white;
-        padding:25px;
-        border-radius:18px;
-        text-align:center;
-        box-shadow:0 5px 20px rgba(0,0,0,08);
-      }
-      .card h3{
-        margin-bottom:10px
-        color:#e91e63;
-      }
-      .form-container {
-        background:white;
-        padding:30px;
-        border-radius:20px;
-        max-width:500px;
-        margin:auto;
-        box-shadow:0 5px 20px rgba(0,0,0,.08);
-      }
-      input,select{
-        width:100%;
-        padding:14px;
-        margin:8px 0 15px;
-        border:1px solid #ddd;
-        border-radius:10px;
-        font-size:16px;
-      }
-      label{
-        font-weight:bold;
-      }
-      .message{
-        margin-top:15px;
-        text-agin:center;
-        font-weight:bold;
-      }
-      footer {
-        backgroud:#222;
-        color:white;
-        text-align:center;
-        padding:25px
-        margin-top:30px
-      }
-      @media(max-width:600px){
-        .hero h1{
-          font-size:34px;
-        }
-        nav a {
-          font-size:12px;
-        }
-      }
-      </style>
-  </head>
-  <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MboaLove | Rencontres au Cameroun</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
     <header>
-      <div class="logo">MboaLove&hearts;</div>
-      <nav>
-        <a href="#accueil">Accueil</a>
-        <a href="#inscription">A propos</a>
-        <a href="#apropos">A propos</a>
-      </nav>
+        <h1>MboaLove &#10084;</h1>
+        <nav>
+            <a href="#">Accueil</a>
+            <a href="#">À propos</a>
+        </nav>
     </header>
-    <!--ACCUEIL-->
-    <div class="hero"id="accueil">
-      <h1>Bienvenu sur Mboalove&heart;</h1>
-      <p>
-        la plateforme de rencontre qui rapproche les coeurs au cameroun.
-        fais de nouvelles rencontres et trouve peut-etre l'amour.
-      </p>
-      <button class="btn"onclick="allerInscription()">
-        Rejoindre MboaLove&heart;
-      </button>
-    </div>
-    <!--FONCTIONNALITES-->
-    <section>
-      <h2 classe="title">pourquoi Mboalove?</h2>
-      <div classe="features">
-        <div class="card">
-          <div class="emoji">&heart</div>
-          <h3>Rencontres</h3>
-          <p>
-            fais connaissance avec des personnes qui recherchent
-            également une belle histoire.
-          </p>
-        </div>
-        <div class="card">
-          <div class="emoji">cameroun</div>
-          <h3>100%cameroun</h3>
-          <p>
-            une plateforme pensée pour les camerounais,
-            où qu'ils soient.
-          </p>
-        </div>
-        <div class="card">
-          <div classe="emoji">cadenat</div>
-          <h3>Respect & sécurité </h3>
-          <p>
-            Mboalove doit rester un espace repectueux pour tous.
-          </p>
-        </div>
-      </div>
-    </section>
-    <--INSTRUCTION-->
-      <selection id="inscription">
-        <h2 classe="title"> créer mon profil&heart</h2>
-        <div class="form-container">
-          <form id="inscriptionform">
-            <label>Prénom</label>
-            <input
-              type="text"
-              id="prenom"
-              placeholder="Ex:ryann"
-              required
-              >
-            <label>Age</label>
-            <input
-              type="number"
-              id="ange"
-              placeholder="Ex25"
-              min="18"
-              required
-              >
-            <label>je suis</label>
-            <select id="genre"required>
-              <option value=">choisir</option>
-                <option value="homme">un homme</option>
-              <option value="femme">une femme</option>
-            </select>
-            <label>ville</label>
-            <input
-              type="text"
-              id="ville"
-              placeholder="Ex:yaoundé"
-              required
-              >
-            <button class="btn"type="submit">
-              créer mon profil&heart
-            </button>
-            <div class="message"id="message"></div>
-          </form>
-        </div>
-      </selection>
-      <!--A PROPOS-->
-      <selectionid="apropos">
-        <h2 class="tite">A PROPOS de MboaLove</h2>
-        <div class="card">
-          <p>
-            MboaLove est une platforme camerounaise destinée
-            aux personnes qui souhaitent faire de nouvelle rencontre,
-            discuter et construire de belles relations.
-          </P>
-          <br>
-          <p>
-            notre objectif est de créer un espece simple,
-            moderne et accessible à tous.
-          </P>
-        </div>
-      </selectionid>
-      <footer>
-        <p>°2026 MboaLove&heart</p>
-        <P>Fais avec RYANNELOUNDOU au Cameroun</P>
-      </footer>
-      <script>
-        function allerinscription(){
-          document.getElementByld("inscription").scrollIntoView({
-            behavior:"smooth"
-        });
-        }
-        document
-        .getElementByld("inscription").scrollIntoView({
-        .addEventListener("submit",function(event){
-      event.preventDefault();
-        const prenom=document.getElementByld("prenom").value;
-        const age=document.getElementByld("age").value;
-          const ville=document.getElementByld("ville").value;
-          const message=document.getElementByld("message");
-          if(age<18){
-            message.style.color="red"
-              message.textcontent=
-                "MboaLove est réservé aux personnes de 18 ans et plus";
-            return;
-        }
-            message.style.color="#e91e633;
-              message.textcontent=
-              "Bienvenue"+prenom+"&heartton profil a été créé!;
-              console.log("nouveau profil:",{
-              prenom:prenom,
-              age:age,
-                ville:ville
-        });
-                                                      });
-                                                      </script>
-  </body>
-</hmtl>
 
-              
-        .
-          
-      </script>
-      </footer>
-      
-          </p>
-          </p>
-                
-  
-        
-        
+    <main>
+        <section class="hero">
+            <h2>Bienvenue sur MboaLove &#10084;</h2>
+            <p>La plateforme de rencontre qui rapproche les cœurs au Cameroun.</p>
+        </section>
+
+        <section class="form-section">
+            <h3>Créer mon profil &#10084;</h3>
+            <form>
+                <input type="text" placeholder="Prénom">
+                <input type="number" placeholder="Âge">
+                <select>
+                    <option>Homme</option>
+                    <option>Femme</option>
+                </select>
+                <input type="text" placeholder="Ville">
+                <button type="submit">S'inscrire</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-        
-        
-        
