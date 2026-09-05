@@ -3,42 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MboaLove | Rencontres au Cameroun</title>
-    <link rel="stylesheet" href="style.css">
+    <title>MboaLove</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+        body { background-color: #fff5f7; color: #333; }
+        header { 
+            background: linear-gradient(135deg, #e91e63, #ff4081); 
+            color: white; 
+            padding: 20px; 
+            text-align: center;
+        }
+        main { padding: 20px; text-align: center; }
+        .hero { margin-bottom: 30px; }
+        form { 
+            background: white; 
+            max-width: 400px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        input, select, button { 
+            width: 100%; 
+            padding: 10px; 
+            margin: 10px 0; 
+            border: 1px solid #ddd; 
+            border-radius: 5px;
+        }
+        button { background: #e91e63; color: white; border: none; font-weight: bold; cursor: pointer; }
+    </style>
 </head>
 <body>
-
     <header>
-        <h1>MboaLove &#10084;</h1>
-        <nav>
-            <a href="#">Accueil</a>
-            <a href="#">À propos</a>
-        </nav>
+        <h1>MboaLove ♥</h1>
     </header>
-
     <main>
-        <section class="hero">
-            <h2>Bienvenue sur MboaLove &#10084;</h2>
-            <p>La plateforme de rencontre qui rapproche les cœurs au Cameroun.</p>
-        </section>
-
-        <section class="form-section">
-            <h3>Créer mon profil &#10084;</h3>
-            <form>
-                <input type="text" placeholder="Prénom">
-                <input type="number" placeholder="Âge">
-                <select>
-                    <option>Homme</option>
-                    <option>Femme</option>
-                </select>
-                <input type="text" placeholder="Ville">
-                <button type="submit">S'inscrire</button>
-            </form>
-        </section>
+        <div class="hero">
+            <h2>Bienvenue sur MboaLove</h2>
+            <p>La plateforme qui rapproche les cœurs au Cameroun.</p>
+        </div>
+        <form>
+            <input type="text" placeholder="Prénom">
+            <input type="number" placeholder="Âge">
+            <select>
+                <option>Homme</option>
+                <option>Femme</option>
+            </select>
+            <input type="text" placeholder="Ville">
+            <button type="submit">Créer mon profil</button>
+        </form>
     </main>
-
 </body>
 </html>
-
-
-
